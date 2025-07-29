@@ -21,6 +21,31 @@ A comprehensive emergency response web application that automatically detects SM
 - **Automatic Startup**: App can start automatically when emergency is detected
 - **Installable**: Can be installed as a native app on mobile devices
 
+## 🚀 Quick Deploy to Vercel
+
+### Option 1: Deploy with Vercel CLI
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Navigate to project directory
+cd project
+
+# Deploy
+vercel
+```
+
+### Option 2: Deploy via Vercel Dashboard
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Click "New Project"
+4. Import your GitHub repository
+5. Vercel will auto-detect the Vite configuration
+6. Click "Deploy"
+
+### Option 3: One-Click Deploy
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/smart-emergency-response-app)
+
 ## 📱 How It Works
 
 ### 1. SMS Detection
@@ -44,24 +69,24 @@ The app automatically:
 5. **UI** → Shows emergency alert interface
 6. **Notifications** → Browser and push notifications
 
-## 🛠️ Setup Instructions
+## 🛠️ Local Development
 
 ### Prerequisites
-- Node.js 16+ installed
+- Node.js 18+ installed
 - Modern web browser with PWA support
 - GSM module connected to your hardware
 
 ### Installation
 
 1. **Clone and Install**
-```bash
+   ```bash
 git clone <your-repo>
 cd project
 npm install
-```
+   ```
 
 2. **Start Development Server**
-```bash
+   ```bash
 npm run dev
 ```
 
@@ -254,6 +279,12 @@ npm run build
 - Check manifest.json
 - Verify service worker
 
+**Vercel deployment issues:**
+- Check build logs in Vercel dashboard
+- Ensure all dependencies are in package.json
+- Verify vercel.json configuration
+- Check for TypeScript compilation errors
+
 ## 📞 Support
 
 For technical support or questions:
@@ -261,6 +292,7 @@ For technical support or questions:
 - Verify all permissions granted
 - Test with different emergency scenarios
 - Review service worker logs
+- Check Vercel deployment logs
 
 ## 🔄 Updates
 
@@ -269,6 +301,7 @@ For technical support or questions:
 - **v1.1**: SMS detection added
 - **v1.2**: PWA features
 - **v1.3**: Automated response system
+- **v1.4**: Vercel deployment ready
 
 ### Future Features
 - Voice recognition for emergency calls

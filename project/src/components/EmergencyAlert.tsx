@@ -81,8 +81,8 @@ const EmergencyAlert: React.FC<EmergencyAlertProps> = ({
       
       if (success) {
         console.log('Emergency alert sent successfully');
-        
-        // Show notification that alerts were sent
+    
+    // Show notification that alerts were sent
         if ('Notification' in window && Notification.permission === 'granted') {
           new Notification('Emergency Alert Sent', {
             body: 'Nearby hospitals and police stations have been notified.',
